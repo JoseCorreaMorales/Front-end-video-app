@@ -1,27 +1,27 @@
 body {
   margin: 0;
   background-color: #6ECCAF;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   scroll-snap-type: mandatory;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   background: transparent;
   width: 10px;
 }
 
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
   border-radius: 30px;
   border: 3px solid black;
-  /* border-right: 5px solid green; */
   background: rgb(73, 73, 73);
   width: 15px;
 }
-body::-webkit-scrollbar-thumb:hover{
+
+body::-webkit-scrollbar-thumb:hover {
   background: black;
 }
 
-::selection{
+::selection {
   background-color: #1ee4a5;
   color: antiquewhite;
 }
@@ -85,15 +85,13 @@ ul:hover {
   width: 40px;
 }
 
-.header__menu--profile a  {
+.header__menu--profile a {
   margin: 0px;
   color: white;
   text-decoration: none;
 }
 
-
 /* Search section */
-
 .main {
   height: 300px;
 }
@@ -125,27 +123,22 @@ ul:hover {
 }
 
 /* Carousel section */
-
 .carousel {
   width: 100%;
   overflow: scroll;
   overflow-y: hidden;
-
-  /*  scroll-snap-type: proximity; */
 }
 
 .carousel::-webkit-scrollbar {
   width: 7px;
   height: 10px;
-  /*  background: antiquewhite; */
   background: transparent;
 }
 
 .carousel::-webkit-scrollbar-thumb {
-   border-radius: 40px;
+  border-radius: 40px;
   background: rgba(78, 78, 78, 0.288);
   width: 7px;
-
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -156,11 +149,9 @@ ul:hover {
   background: rgba(78, 78, 78, 0.774);
 }
 
-
 .carousel__title {
   color: white;
   margin-bottom: 80px;
-
 }
 
 .carousel__container {
@@ -183,7 +174,7 @@ ul:hover {
   position: relative;
 }
 
-.carousel-item:hover~.carousel-item {
+.carousel-item:hover ~ .carousel-item {
   transform: translate3d(100px, 0, 0);
   opacity: 1;
 }
@@ -245,19 +236,14 @@ ul:hover {
   text-decoration: underline;
 }
 
-
-
-
-
-
-
 @media only screen and (max-width: 540px) {
   .footer {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
-
   .footer a {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
