@@ -1,22 +1,22 @@
-const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.html',
+  entry: './src/index.js', // Reemplaza con la ruta correcta a tu punto de entrada JS
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js', // Nombre del archivo de salida
+    path: __dirname + '/dist', // Carpeta de salida
   },
   module: {
     rules: [
       {
-        test: /\.html$/,
-        use: ['html-loader'],
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './src/index.html', // Ruta al archivo HTML de entrada
     }),
   ],
 };

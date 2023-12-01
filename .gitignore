@@ -30,3 +30,8 @@ coverage/
 # Miscellaneous
 .DS_Store
 Thumbs.db
+*.css
+./src/styles.css
+./src/base/normalize.css
+./src/iniciar-sesion/iniciar-sesion.css
+./src/registro/registro.css
