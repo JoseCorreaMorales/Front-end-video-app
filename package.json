@@ -1,0 +1,28 @@
+{
+  "name": "front-end-video-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode development",
+    "dev": "webpack serve --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseCorreaMorales/Front-end-video-app.git"
+  },
+  "author": "jose correa m.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoseCorreaMorales/Front-end-video-app/issues"
+  },
+  "homepage": "https://github.com/JoseCorreaMorales/Front-end-video-app#readme",
+  "devDependencies": {
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}

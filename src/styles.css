@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: #6ECCAF;
+  background-color: url('./img/tumblr_oiuqa65tYy1tf8vylo1_1280.jpg');
   font-family: "Mulish", sans-serif;
   scroll-snap-type: mandatory;
 }
