@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const loader = require('sass-loader');
 
 module.exports = {
   entry: './src/index.js', // Reemplaza con la ruta correcta a tu punto de entrada JS
@@ -12,6 +13,20 @@ module.exports = {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name:'[name].[ext]',
+              outputPath: 'images/',
+            },
+
+          }
+        ]
+      }
+
     ],
   },
   plugins: [
